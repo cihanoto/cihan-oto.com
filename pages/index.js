@@ -1,65 +1,77 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head"
+import "normalize.css"
+import { Button } from "../components"
+import { Call, CarSport, Link, LogOut } from "../components/icons"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div className={styles.container}>
+			<Head>
+				<title>Create Next App</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+			<div className={styles.headerWrapper}>
+				<header className={styles.header}>
+					<b className={styles.logo}>
+						<CarSport style={{
+							fontSize: "32px"
+						}} />
+					CİHAN OTOMOTİV</b>
+					<span>Menü</span>
+				</header>
+			</div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+			<main className={styles.main}>
+				<h1 className={styles.title}>
+					Cihan Otomotiv {/* <a href="/">Next.js!</a> */}
+				</h1>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+				<p className={styles.description}>
+					Cihan oto parça{" "}
+					<Button><Call />Telefon Edin</Button>
+					{/* <code className={styles.code}>pages/index.js</code> */}
+				</p>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+				<div className={styles.grid}>
+					<a href="#markalar" className={styles.card}>
+						<h3>Araç Markaları &rarr;</h3>
+						<p>Yedek parçasını bulmak için araç markalarına göz atın.</p>
+					</a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+					<a href="#parçalar" className={styles.card}>
+						<h3>Parçalar &rarr;</h3>
+						<p>Aradığınız araç parçasını bulmak için göz atın, inceleyin.</p>
+					</a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+					<a href="/" className={styles.card}>
+						<h3><LogOut />sahibinden.com</h3>
+						<p>sahibinden.com adresimizi ziyaret ederek aradığınız parçaları bulun.</p>
+					</a>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+					<a href="tel:+905325320000" className={styles.card}>
+						<h3>İletişim & Adres &rarr;</h3>
+						<p>Sorunlarınızın çözümü için arayın ya da adresimizde ziyaret edin.</p>
+					</a>
+				</div>
+
+				<div id="markalar">
+					<h2>Araç Markaları</h2>
+				</div>
+
+				<div id="parçalar">
+					<h2>Araç Parçaları</h2>
+				</div>
+
+				<div id="iletişim">
+					<h2>İletişim</h2>
+				</div>
+			</main>
+
+			<footer className={styles.footer}>
+				Copyright &copy; {new Date().getFullYear()} Cihan Otomotiv
+			</footer>
+		</div >
+	)
 }

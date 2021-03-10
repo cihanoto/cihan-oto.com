@@ -1,0 +1,6 @@
+export { default as Call } from './Call'
+export { default as CarSport } from './CarSport'
+export { default as Link } from './Link'
+export { default as Location } from './Location'
+export { default as LogOut } from './LogOut'
+export { default as LogoWhatsapp } from './LogoWhatsapp'
