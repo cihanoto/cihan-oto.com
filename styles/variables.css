@@ -1,4 +1,4 @@
-body {
+html {
 	/** Breakpoints **/
 	--breakpoint-xs: 0;
 	--breakpoint-sm: 576px;
@@ -7,68 +7,7 @@ body {
 	--breakpoint-xl: 1200px;
 	/** Breakpoints **/
 
-	/** Theme **/
-	--theme: #0070f3;
-	--theme-tint-10: #EFE6FD;
-	/** Theme **/
-
-	/** Background **/
-	--bg-color: #fff;
-	--shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
-		0 1px 10px 0 rgba(0,0,0,0.12),
-		0 2px 4px -1px rgba(0,0,0,0.2);
-	--shadow-dropdown:0 2px 4px -1px rgba(0,0,0,.2),
-		0 4px 5px 0 rgba(0,0,0,.14),
-		0 1px 10px 0 rgba(0,0,0,.12);
-	--backdrop-filter: saturate(1.8) blur(10px);
-	/** Background **/
-
-	/** Text Colors **/
-	--text-color: #333333; /* text-color-on-bg */
-	/** Text Colors **/
-
-	/** Colors **/
-	--blue: rgb(0, 122, 255);
-	--green: rgb(52, 199, 89);
-	--indigo: rgb(88, 86, 214);
-	--orange: rgb(255, 149, 0);
-	--pink: rgb(255, 45, 85);
-	--purple: rgb(175, 82, 222);
-	--red: rgb(255, 59, 48);
-	--teal: rgb(90, 200, 250);
-	--yellow: rgb(255, 204, 0);
-	/** Colors **/
-
-	/** Color Tints **/
-	--blue-tint-10: rgba(0, 122, 255, .1);
-	--green-tint-10: rgba(52, 199, 89, .1);
-	--indigo-tint-10: rgba(88, 86, 214, .1);
-	--orange-tint-10: rgba(255, 149, 0, .1);
-	--pink-tint-10: rgba(255, 45, 85, .1);
-	--purple-tint-10: rgba(175, 82, 222, .1);
-	--red-tint-10: rgba(255, 59, 48, .1);
-	--teal-tint-10: rgba(90, 200, 250, .1);
-	--yellow-tint-10: rgba(255, 204, 0, .1);
-	/** Color Tints **/
-
-	/** Grays **/
-	--gray: rgb(142, 142, 147);
-	--gray-2: rgb(174, 174, 178);
-	--gray-3: rgb(199, 199, 204);
-	--gray-4: rgb(209, 209, 214);
-	--gray-5: rgb(229, 229, 234);
-	--gray-6: rgb(242, 242, 247);
-	/** Grays **/
-
-	/** Borders **/
-	--border-color: var(--gray-6);
-	--border: 1px solid var(--border-color);
-	--border-radius: 5px;
-	/** Borders **/
-
-	--color: var(--bg-color);
-	--color-tp: var(--text-color);
-	
+		
 	/** z-index **/
 	--zindex-dropdown: 1000;
 	--zindex-sticky: 1020;
@@ -80,51 +19,36 @@ body {
 	/** z-index **/
 }
 
-body.dark {
-	/* transition: color 500ms; */
+body {
 	/** Theme **/
-	--theme: rgb(204, 112, 254);
-	--theme-tint-10:  rgba(204, 112, 254, .1);
+	--theme: #0070f3;
+	--theme-tint-10: #EFE6FD;
+	--color-on-theme: #FFFFFF;
 	/** Theme **/
 
 	/** Background **/
-	--bg-color: #1f1b24;
-	--shadow: 0 4px 5px 0 rgba(128,128,128,0.14),
-		0 1px 10px 0 rgba(128,128,128,0.12),
-		0 2px 4px -1px rgba(128,128,128,0.2);
-	--shadow-dropdown:0 2px 4px -1px rgba(128,128,128,.2),
-		0 4px 5px 0 rgba(128,128,128,.14),
-		0 1px 10px 0 rgba(128,128,128,.12);
-	--backdrop-filter: saturate(1.8) blur(10px);
+	--bg-color: #fff;
+	--backdrop-filter: saturate(180%) blur(5px);
+	--bg-color-tp: hsla(0, 0%, 100%, 0.8);
 	/** Background **/
 
 	/** Text Colors **/
-	--text-color: #fff; /* text-color-on-bg */
+	--text-color: #333333;
+	--text-color-light: #545454;
 	/** Text Colors **/
-	
-	/** Colors **/
-	--blue: rgb(10, 132, 255);
-	--green: rgb(48, 209, 88);
-	--indigo: rgb(94, 92, 230);
-	--orange: rgb(255, 159, 0);
-	--pink: rgb(255, 55, 95);
-	--purple: rgb(191, 90, 242);
-	--red: rgb(255, 69, 58);
-	--teal-blue: rgb(100, 210, 255);
-	--yellow: rgb(255, 214, 10);
-	/** Colors **/
-
-	/** Grays **/
-	--gray: rgb(142, 142, 147);
-	--gray-2: rgb(99, 99, 102);
-	--gray-3: rgb(72, 72, 74);
-	--gray-4: rgb(58, 58, 60);
-	--gray-5: rgb(44, 44, 46);
-	--gray-6: rgb(28, 28, 30);
-	/** Grays **/
 
 	/** Borders **/
-	--border-color: rgba(128 ,128, 128, .1);
+	--border-color: #eaeaea;
 	--border: 1px solid var(--border-color);
+	--border-radius: 5px;
 	/** Borders **/
+
+	--green: rgb(52, 199, 89);
+
+	--color: var(--bg-color);
+	--color-tp: var(--text-color);
+}
+
+body.dark {
+
 }

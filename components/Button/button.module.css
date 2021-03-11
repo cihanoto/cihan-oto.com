@@ -2,18 +2,29 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 16px;
-	height: 42px;
-	font-size: 20px;
+	padding: 0px 24px;
+	height: 48px;
+	font-size: 1.2rem;
 	background: var(--theme);
 	border: none;
-	color: white;
-	border-radius: 5px;
+	color: var(--color-on-theme);
+	border-radius: 48px;
 	outline: none;
 	cursor: pointer;
 }
 
 .button svg {
-	font-size: 24px;
+	font-size: 1.6rem;
 	margin-right: 12px;
+}
+
+.button.small {
+	height: 30px;
+	padding: 0px 16px;
+	font-size: 1rem;
+}
+
+.button.small svg {
+	font-size: 1.2rem;
+	margin-right: 8px;
 }

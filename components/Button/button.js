@@ -1,8 +1,9 @@
+import cn from "classnames"
 import styles from "./button.module.css"
 
-function Button({ children, props }) {
+function Button({ children, size, props }) {
 	return (
-		<button className={styles.button}{...props}>
+		<button className={cn(styles.button, styles[size])} {...props}>
 			{children}
 		</button>
 	)
