@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import cn from "classnames"
 import FocusTrap from "focus-trap-react"
 import noScroll from "no-scroll"
-import { CloseCircle, CloseCircleOutline } from "../icons"
+import { CloseCircle, CloseCircleOutline } from "../../icons"
 import styles from "./modal.module.css"
 
 const CloseButton = ({ onClick, props }) => {

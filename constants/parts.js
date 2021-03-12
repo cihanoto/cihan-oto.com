@@ -1,3 +1,18 @@
 export const PARTS = [
-
+	{ text: "Bagaj", url: "https://sahibinden.com/" },
+	{ text: "Cam", url: "https://sahibinden.com/" },
+	{ text: "Çamurluk", url: "https://sahibinden.com/" },
+	{ text: "Diferansiyel", url: "https://sahibinden.com/" },
+	{ text: "Dinamo", url: "https://sahibinden.com/" },
+	{ text: "Döşeme", url: "https://sahibinden.com/" },
+	{ text: "Jant", url: "https://sahibinden.com/" },
+	{ text: "Kaput", url: "https://sahibinden.com/" },
+	{ text: "Kapı", url: "https://sahibinden.com/" },
+	{ text: "Koltuk", url: "https://sahibinden.com/" },
+	{ text: "Kaporta", url: "https://sahibinden.com/" },
+	{ text: "Lastik", url: "https://sahibinden.com/" },
+	{ text: "Mekanik", url: "https://sahibinden.com/" },
+	{ text: "Motor", url: "https://sahibinden.com/" },
+	{ text: "Şanzıman", url: "https://sahibinden.com/" },
+	{ text: "Tesisat", url: "https://sahibinden.com/" },
 ]
