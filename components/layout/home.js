@@ -1,3 +1,4 @@
+import { CONSTANTS } from "../../constants"
 import { Button } from "../"
 import { Call, LogOut } from "../icons"
 import styles from "../../styles/home.module.css"
@@ -6,7 +7,7 @@ function Home() {
 	return (
 		<div>
 			<h1 className={styles.title}>
-				Cihan Otomotiv
+				{CONSTANTS.title}
 			</h1>
 			<div className={styles.description}>
 				<p>
@@ -23,7 +24,7 @@ function Home() {
 					<h3>Parçalar &rarr;</h3>
 					<p>Aradığınız araç parçasını bulmak için göz atın, inceleyin.</p>
 				</a>
-				<a href="#araçlar" className={styles.card}>
+				<a href={CONSTANTS.sahibinden} target="_blank" className={styles.card}>
 					<h3>Satılık Araçlar &rarr;</h3>
 					<p>Satılık araçlarımızı görüntüleyin.</p>
 				</a>
@@ -31,7 +32,7 @@ function Home() {
 					<h3>Aracınızı Satın &rarr;</h3>
 					<p>Aracınızı satmak için bizimle iletişime geçin.</p>
 				</a>
-				<a href="/" className={styles.card}>
+				<a href={CONSTANTS.sahibinden} target="_blank" className={styles.card}>
 					<h3><LogOut />sahibinden.com</h3>
 					<p>sahibinden.com adresimizi ziyaret ederek aradığınız parçaları bulun.</p>
 				</a>

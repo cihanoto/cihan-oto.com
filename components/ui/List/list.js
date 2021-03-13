@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styles from "./list.module.css"
 
 function List({ list }) {
@@ -5,13 +6,12 @@ function List({ list }) {
 		<ul className={styles.list}>
 			{list.map((item, i) =>
 				<li className={styles.itemWrapper} key={i}>
-					<a
-						href={item.url}
-						className={styles.item}
-					>
-						{/* {item?.image} */}
-						{item.text}
-					</a>
+					<Link href={item.url}>
+						<a className={styles.item}>
+							{/* {item?.image} */}
+							{item.text}
+						</a>
+					</Link>
 				</li>)}
 		</ul>
 	)
