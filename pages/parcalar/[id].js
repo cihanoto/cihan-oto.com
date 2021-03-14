@@ -7,7 +7,7 @@ import { TEXTS } from "../../constants/texts"
 export const getStaticProps = async ({ params }) => {
 	return {
 		props: {
-			part: PARTS.filter((p) => p.id.toString() === params.id)
+			part: PARTS.filter((part) => part.id.toString() === params.id)
 		}
 	}
 }

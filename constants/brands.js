@@ -1,76 +1,22 @@
 export const BRANDS = [
-	{
-		text: "BMW",
-		image: "/public/images/bmw.png"
-	},
-	{
-		text: "Citroën",
-		image: "/public/images/citroen.png"
-	},
-	{
-		text: "Dacia",
-		image: "/public/images/dacia.png"
-	},
-	{
-		text: "Fiat",
-		image: "/public/images/fiat.png"
-	},
-	{
-		text: "Ford",
-		image: "/public/images/ford.png"
-	},
-	{
-		text: "Honda",
-		image: "/public/images/honda.png"
-	},
-	{
-		text: "Hyundai",
-		image: "/public/images/hyundai.png"
-	},
-	{
-		text: "Land Rover",
-		image: "/public/images/land-rover.png"
-	},
-	{
-		text: "Mazda",
-		image: "/public/images/mazda.png"
-	},
-	{
-		text: "Mercedes",
-		image: "/public/images/fiat.png"
-	},
-	{
-		text: "Mitsubishi",
-		image: "/public/images/mitsubishi.png"
-	},
-	{
-		text: "Opel",
-		image: "/public/images/opel.png"
-	},
-	{
-		text: "Peugeot",
-		image: "/public/images/peugeot.png"
-	},
-	{
-		text: "Renault",
-		image: "/public/images/fiat.png"
-	},
-	{
-		text: "Škoda",
-		image: "/public/images/skoda.png"
-	},
-	{
-		text: "Vokswagen",
-		image: "/public/images/fiat.png"
-	},
-	{
-		text: "Tofaş",
-		image: "/public/images/tofas.png"
-	},
-	{
-		text: "Toyota",
-		image: "/public/images/toyota.png"
-	}
+	{ text: "BMW" },
+	{ text: "Citroën" },
+	{ text: "Dacia" },
+	{ text: "Fiat" },
+	{ text: "Ford" },
+	{ text: "Honda" },
+	{ text: "Hyundai" },
+	{ text: "Land Rover" },
+	{ text: "Mazda" },
+	{ text: "Mercedes" },
+	{ text: "Mitsubishi" },
+	{ text: "Opel" },
+	{ text: "Peugeot" },
+	{ text: "Renault" },
+	{ text: "Škoda" },
+	{ text: "Vokswagen" },
+	{ text: "Tofaş" },
+	{ text: "Toyota" }
 ].map((part, i) => {
 	return {
 		...part,

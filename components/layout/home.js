@@ -13,7 +13,7 @@ function Home() {
 				<p>
 					2007 yılından bu yana araç alım - satım ve yedek parça temininde <b>uzman ve tecrübeli kadromuz</b> ile hizmet vermekteyiz. Otomobil, kamyon, kamyonet, iş makineleri gibi her türden aracın; uygun fiyatlara alım ve satımını gerçekleştirmenin yanı sıra, mekanik, kaporta, iç aksesuar, elektrik, motor, şanzıman, kapı, koltuk, jant vs. bütün aksamlarını <b>garantili ve uygun fiyatlar</b>la tedarik ediyor, ihtiyaç halinde bütün şehirlerimize <b>kargo ile teslim ediyoruz</b>.
 				</p>
-				<Button><Call />Telefon Edin</Button>
+				<Button href="#iletişim"><Call />Telefon Edin</Button>
 			</div>
 			<div className={styles.grid}>
 				<a href="#markalar" className={styles.card}>

@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import Layout from "../../components/layout/layout"
 import { List } from "../../components"
 import { PARTS } from "../../constants/parts"
+import { TEXTS } from "../../constants/texts"
 
 function Parts() {
 	const router = useRouter()
@@ -10,14 +11,15 @@ function Parts() {
 	return (
 		<Layout
 			pageTitle="Araç Yedek Parçaları"
-			pageDescription="Her marka aracınız içiny yedek parça satın almak için bizimle iletişime geçin."
+			pageDescription={TEXTS.PARTS_DESCRIPTION_PLAIN_TEXT}
 		>
 			<h1 className={"title"}>{marka && marka + " "}Araç Parçaları</h1>
+			<p>{TEXTS.PARTS_DESCRIPTION_PLAIN_TEXT}</p>
 			<List list={
 				!marka ? PARTS : PARTS.map((part) => {
 					return {
 						...part,
-						url: part.url + "?marka=" + marka
+						url: part.id + "?marka=" + marka
 					}
 				})
 			} />

@@ -5,20 +5,20 @@ import { TEXTS } from "../../constants/texts"
 export const getStaticProps = async ({ params }) => {
 	return {
 		props: {
-			part: BRANDS.filter((p) => p.id.toString() === params.id)
+			brand: BRANDS.filter((brand) => brand.id.toString() === params.id)
 		}
 	}
 }
 
 export const getStaticPaths = async () => {
-	const paths = BRANDS.map((part) => ({
-		params: { id: part.id.toString() },
+	const paths = BRANDS.map((brand) => ({
+		params: { id: brand.id.toString() },
 	}))
 	return { paths, fallback: false }
 }
 
-function Part({ part }) {
-	const text = part[0].text
+function Brand({ brand }) {
+	const text = brand[0].text
 
 	return (
 		<Layout
@@ -33,4 +33,4 @@ function Part({ part }) {
 	)
 }
 
-export default Part
+export default Brand

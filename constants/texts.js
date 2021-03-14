@@ -2,6 +2,7 @@ import Link from "next/link"
 import {CONSTANTS} from "./"
 
 export const TEXTS = {
+	PARTS_DESCRIPTION_PLAIN_TEXT: "Her türden ve markadan aracınız için en kaliteli yedek parçaları ucuz fiyatlara, garantili olarak satın almak için bizi tercih edin.",
 	PART_DESCRIPTION: (text)=> (
 		<>Uzman ve tecrübeli kadromuzla, kamyon, kamyonet, otomobil vs. tüm araçlar için uygun fiyata {text.toLowerCase()} sağlıyoruz. Antalya Kepez'den kendiniz teslim alabileceğiniz gibi tüm şehirlerimize kargo ile teslim ediyoruz. Çevrimiçi mağazamızdaki {text.toLowerCase()} ilanlarına bakmak için <a href={`${CONSTANTS.sahibinden}${text}`} target="_blank" className={"link"}>buraya tıklayın</a>. Çevrimiçi mağazamız stoklarında bulamazsanız, aracınız için ucuz fiyata {text.toLowerCase()} almak için bizimle iletişime geçin.
 				<br /><br />Diğer araç parçalarına <Link href="/parcalar"><a className="link">gözatın</a></Link>.</>

@@ -18,7 +18,7 @@ function Brands() {
 					...brand,
 					url: `${CONSTANTS.sahibinden}${brand.text}`,
 				}
-			})} />
+			})} target="_blank" />
 		</div >
 	)
 }
