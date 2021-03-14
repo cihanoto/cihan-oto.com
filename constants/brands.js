@@ -8,12 +8,20 @@ export const BRANDS = [
 		image: "/public/images/citroen.png"
 	},
 	{
+		text: "Dacia",
+		image: "/public/images/dacia.png"
+	},
+	{
 		text: "Fiat",
 		image: "/public/images/fiat.png"
 	},
 	{
 		text: "Ford",
 		image: "/public/images/ford.png"
+	},
+	{
+		text: "Honda",
+		image: "/public/images/honda.png"
 	},
 	{
 		text: "Hyundai",
