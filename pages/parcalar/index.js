@@ -19,7 +19,7 @@ function Parts() {
 				!marka ? PARTS : PARTS.map((part) => {
 					return {
 						...part,
-						url: part.id + "?marka=" + marka
+						url: `/parcalar/${part.id}?marka=${marka}`
 					}
 				})
 			} />
