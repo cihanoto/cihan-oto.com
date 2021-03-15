@@ -40,15 +40,10 @@
 	color: var(--theme);
 }
 
-.logo:hover {
-	_background: rgba(128, 128, 128, .1);
-}
-
 .container {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	_justify-content: center;
 	align-items: center;
 }
 
