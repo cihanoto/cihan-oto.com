@@ -41,11 +41,13 @@ function Layout({ children, pageTitle, pageDescription }) {
 				<Contact />
 			</main>
 			<footer className={styles.footer}>
+
+				<section>&copy;&nbsp;2007&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{CONSTANTS.title}&nbsp;</section>
+
 				<a style={{ cursor: "pointer" }} onClick={(event) => {
 					event.preventDefault()
-					event.target.innerText = "sirridemirtas@gmail.com"
-				}} title="Tasarım ve Programlama">t&p.</a>
-				<section>&nbsp;&copy;&nbsp;2007&nbsp;-&nbsp;{new Date().getFullYear()}&nbsp;{CONSTANTS.title}</section>
+					event.target.parentNode.innerHTML = `<a href="mailto:sirridemirtas@gmail.com">sirridemirtas@gmail.com</a>`
+				}} title="Tasarım ve Programlama"> &#183; t&p.</a>
 			</footer>
 		</div>
 	)

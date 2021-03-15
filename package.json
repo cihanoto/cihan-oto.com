@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-static": "next build && next export",
     "start": "next start",
     "icon": "svgr assets/icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
   },

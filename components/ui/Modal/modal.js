@@ -27,7 +27,6 @@ function Modal({ children, visibility = false, ...props }) {
 	const [vb, setVb] = useState(visibility)
 
 	useEffect(() => {
-		console.log(vb)
 		if (vb) {
 			noScroll.on()
 		} else {
